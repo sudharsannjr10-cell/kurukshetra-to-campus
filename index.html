@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurukshetra to Campus | Timeless Strategy for Student Conflict Resolution</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="An interactive educational web app applying strategic negotiation lessons from Krishna's Peace Mission in the Mahabharata (Udyoga Parva) to resolve modern student and team conflicts.">
+  <meta name="keywords" content="Mahabharata, Krishna Peace Mission, Udyoga Parva, conflict resolution, student teams, group projects, communication, ancient wisdom">
+  <meta property="og:title" content="Kurukshetra to Campus | Strategic Conflict Resolution">
+  <meta property="og:description" content="Turning lessons from the Mahabharata into practical teamwork solutions for modern students.">
+  <meta property="og:image" content="hero-banner.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Audio Tone (Web Audio Synth) -->
+  <div id="ambient-container" class="ambient-pill">
+    <button id="ambient-btn" class="ambient-toggle" title="Toggle peaceful ambient drone" aria-label="Toggle ambient drone">
+      <span class="sound-wave">
+        <span></span><span></span><span></span><span></span>
+      </span>
+      <span class="ambient-label">Ambient Sound: Off</span>
+    </button>
+  </div>
+
+  <!-- Top Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <img src="logo.jpg" alt="Kurukshetra to Campus Emblem" class="brand-img">
+        <div class="brand-text">
+          <span class="brand-title">Kurukshetra <span class="brand-accent">to</span> Campus</span>
+          <span class="brand-subtitle">Udyoga Parva Strategic Framework</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#about" class="nav-link">The Mission</a>
+        <a href="#framework" class="nav-link">4 Upāyas</a>
+        <a href="#scenarios" class="nav-link">Conflict Solver</a>
+        <a href="#simulator" class="nav-link">Peace Simulator</a>
+        <a href="#archetype" class="nav-link">Your Archetype</a>
+        <button id="open-deploy-btn" class="btn btn-gold-outline nav-btn">
+          <span>🚀 Deploy App</span>
+        </button>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="#about" class="mobile-link">The Mission</a>
+    <a href="#framework" class="mobile-link">4 Upāyas</a>
+    <a href="#scenarios" class="mobile-link">Conflict Solver</a>
+    <a href="#simulator" class="mobile-link">Peace Simulator</a>
+    <a href="#archetype" class="mobile-link">Your Archetype</a>
+    <button id="mobile-deploy-btn" class="btn btn-gold mobile-deploy">🚀 How to Deploy</button>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-epic">
+            <span class="badge-dot"></span>
+            Inspired by Krishna's Peace Mission (कृष्ण-दौत्य) • Udyoga Parva
+          </div>
+
+          <h1 class="hero-title">
+            From Ancient Battlefields <br>
+            to <span class="gradient-gold-text">Modern Campus Peace</span>
+          </h1>
+
+          <p class="hero-description">
+            When group project tensions boil, deadlines clash, or teammates freeze in silence—confrontation is not your only weapon. 
+            Discover how Sri Krishna’s legendary embassy to Hastinapura provides a bulletproof 
+            psychological and strategic blueprint to solve conflicts with grace, clarity, and victory.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#scenarios" class="btn btn-gold">
+              <span>🎯 Choose Your Conflict</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#simulator" class="btn btn-glass">
+              <span>🕊️ Enter Peace Mission Simulator</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-num">5000+</span>
+              <span class="stat-label">Years of Strategic Wisdom</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-num">12+</span>
+              <span class="stat-label">Student Conflict Scenarios</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Classic Upāya Methods</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Practical & Actionable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-frame">
+            <img src="hero-banner.jpg" alt="Lord Krishna as Peace Envoy bridging to modern student collaborative workspace" class="hero-artwork">
+            <div class="visual-overlay-caption">
+              <span class="caption-tag">Udyoga Parva, Chapter 72</span>
+              <p class="caption-text">"Exhaust all sincere diplomacy and communication before you draw the battle lines."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE INSPIRATION & BRIDGE SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">THE SACRED BLUEPRINT</span>
+          <h2 class="section-title">The "Kurukshetra to Campus" Model</h2>
+          <p class="section-lead">
+            In the Mahabharata, war was not the first instinct. Before Kurukshetra erupted, Krishna personally stepped into the lion's den as a mediator. Here is how we bridge that epic event into your everyday college journey:
+          </p>
+        </div>
+
+        <div class="pipeline-grid">
+          <div class="pipeline-card">
+            <div class="pipeline-step">01</div>
+            <div class="pipeline-icon">🏛️</div>
+            <h3 class="pipeline-heading">Mahabharata Situation</h3>
+            <p class="pipeline-desc">
+              Krishna visits the Kaurava court. Despite knowing Duryodhana's stubborness, he seeks five small villages to avert catastrophic war.
+            </p>
+            <div class="pipeline-source">Source: Udyoga Parva (Book 5)</div>
+          </div>
+
+          <div class="pipeline-arrow">➔</div>
+
+          <div class="pipeline-card highlight-card">
+            <div class="pipeline-step">02</div>
+            <div class="pipeline-icon">💡</div>
+            <h3 class="pipeline-heading">Strategic Principle</h3>
+            <p class="pipeline-desc">
+              Always negotiate from strength, moral clarity, and objective benefit rather than wounded pride. Exhaust calm dialogue first.
+            </p>
+            <div class="pipeline-source">Diplomatic Upāya: Sāma & Dāna</div>
+          </div>
+
+          <div class="pipeline-arrow">➔</div>
+
+          <div class="pipeline-card">
+            <div class="pipeline-step">03</div>
+            <div class="pipeline-icon">🎒</div>
+            <h3 class="pipeline-heading">Modern Student Dilemma</h3>
+            <p class="pipeline-desc">
+              Your group mates are yelling in a WhatsApp chat or freezing each other out over presentation slides and tech choices.
+            </p>
+            <div class="pipeline-source">Campus Reality Check</div>
+          </div>
+
+          <div class="pipeline-arrow">➔</div>
+
+          <div class="pipeline-card">
+            <div class="pipeline-step">04</div>
+            <div class="pipeline-icon">✅</div>
+            <h3 class="pipeline-heading">Actionable Resolution</h3>
+            <p class="pipeline-desc">
+              Structured 5-step mediation checklist + word-for-word copyable message templates to restore harmony and ace the submission.
+            </p>
+            <div class="pipeline-source">Instant Implementation</div>
+          </div>
+        </div>
+
+        <!-- Shloka Banner -->
+        <div class="shloka-banner">
+          <div class="shloka-sanskrit">
+            "शमं रोचयसे कृष्ण न युद्धं भरतर्षभ। शमेन हि सुखं लब्धुं शक्यं नान्येन केनचित्॥"
+          </div>
+          <div class="shloka-translit">
+            "Śamaṁ rocayase kṛṣṇa na yuddhaṁ bharatarṣabha | Śamena hi sukhaṁ labdhuṁ śakyaṁ nānyena kenacit ||"
+          </div>
+          <div class="shloka-english">
+            "You desire peace, O Krishna, not war. For true fulfillment and triumph can only be achieved through reconciliation and mutual understanding, not through devastation."
+          </div>
+          <span class="shloka-ref">— Mahabharata, Udyoga Parva (5.71.4)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE 4 UPAYAS FRAMEWORK -->
+    <section id="framework" class="framework-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">CHĀṆAKYA & MAHABHARATA DIPLOMACY</span>
+          <h2 class="section-title">The Four Upāyas of Campus Harmony</h2>
+          <p class="section-lead">
+            Ancient strategic treatises outline four progressive methods (चतुरूपाय) to resolve discord. Learn when and how to deploy each:
+          </p>
+        </div>
+
+        <div class="upaya-grid">
+          <div class="upaya-card">
+            <div class="upaya-header">
+              <span class="upaya-badge">Stage 1</span>
+              <span class="upaya-sanskrit">साम</span>
+            </div>
+            <h3 class="upaya-title">Sāma (Conciliation)</h3>
+            <p class="upaya-meaning">Empathetic listening, cordial speech, acknowledging positive intent, and finding common goals.</p>
+            <div class="upaya-campus">
+              <strong>Campus Application:</strong>
+              "Let's grab a coffee and hear everyone's side before locking any decisions. We all want an 'A' grade."
+            </div>
+          </div>
+
+          <div class="upaya-card">
+            <div class="upaya-header">
+              <span class="upaya-badge">Stage 2</span>
+              <span class="upaya-sanskrit">दान</span>
+            </div>
+            <h3 class="upaya-title">Dāna (Fair Concession)</h3>
+            <p class="upaya-meaning">Strategic trade-offs, win-win workload rebalancing, and offering incentives or credit sharing.</p>
+            <div class="upaya-campus">
+              <strong>Campus Application:</strong>
+              "If you handle the frontend layout and documentation, I will write the backend endpoints and slides."
+            </div>
+          </div>
+
+          <div class="upaya-card">
+            <div class="upaya-header">
+              <span class="upaya-badge">Stage 3</span>
+              <span class="upaya-sanskrit">भेद</span>
+            </div>
+            <h3 class="upaya-title">Bheda (Perspective Shift)</h3>
+            <p class="upaya-meaning">Differentiating personalities, separating facts from wounded egos, and deconstructing complex deadlock into distinct independent parts.</p>
+            <div class="upaya-campus">
+              <strong>Campus Application:</strong>
+              "We aren't arguing about who is smarter; we are simply deciding whether feature X fits within a 3-day buffer."
+            </div>
+          </div>
+
+          <div class="upaya-card">
+            <div class="upaya-header">
+              <span class="upaya-badge">Stage 4</span>
+              <span class="upaya-sanskrit">दण्ड</span>
+            </div>
+            <h3 class="upaya-title">Daṇḍa (Firm Accountability)</h3>
+            <p class="upaya-meaning">Setting non-negotiable boundaries, invoking clear rubric rules, and escalating to institutional authority (Professor/TA) as a transparent last resort.</p>
+            <div class="upaya-campus">
+              <strong>Campus Application:</strong>
+              "If we don't have your section by Friday 6 PM, we will submit the remaining sections and inform Prof. Sharma."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE CONFLICT RESOLUTION NAVIGATOR -->
+    <section id="scenarios" class="scenarios-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">INTERACTIVE CONFLICT COMPASS</span>
+          <h2 class="section-title">Select Your Student Dilemma</h2>
+          <p class="section-lead">
+            Choose a common university challenge below, or search your specific keywords. Each dilemma maps to a precise episode in the epic with tactical next steps.
+          </p>
+        </div>
+
+        <!-- Search & Filters -->
+        <div class="search-filter-box">
+          <div class="search-input-wrap">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="conflict-search" placeholder="Search conflict (e.g. 'free-rider', 'group fight', 'ghosting', 'credit', 'roommate')..." aria-label="Search conflict">
+            <button id="clear-search-btn" class="clear-search-btn" style="display:none;" title="Clear search">&times;</button>
+          </div>
+
+          <div class="filter-pills" id="filter-pills">
+            <button class="filter-pill active" data-category="all">
+              <span>All Dilemmas</span> <span class="pill-count" id="count-all">12</span>
+            </button>
+            <button class="filter-pill" data-category="team">
+              <span>👥 Team & Project</span> <span class="pill-count" id="count-team">4</span>
+            </button>
+            <button class="filter-pill" data-category="communication">
+              <span>💬 Communication</span> <span class="pill-count" id="count-comm">3</span>
+            </button>
+            <button class="filter-pill" data-category="decision">
+              <span>⚖️ Decision-Making</span> <span class="pill-count" id="count-decision">2</span>
+            </button>
+            <button class="filter-pill" data-category="peer">
+              <span>🤝 Peer & Roommate</span> <span class="pill-count" id="count-peer">3</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Conflict Cards Grid -->
+        <div class="scenarios-grid" id="scenarios-grid">
+          <!-- Dynamically populated by app.js -->
+        </div>
+
+        <div id="no-results" class="no-results" style="display: none;">
+          <div class="no-results-icon">🔍</div>
+          <h3>No matching conflict scenario found</h3>
+          <p>Try searching different words like "deadline", "slides", "credit", or clear your filter.</p>
+          <button class="btn btn-gold-outline" onclick="resetSearchAndFilter()">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE "KRISHNA PEACE MISSION" SIMULATOR (DOOTA MODE) -->
+    <section id="simulator" class="simulator-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">INTERACTIVE DIPLOMATIC ROLEPLAY</span>
+          <h2 class="section-title">The Doota Simulator: Stepping Into Krishna's Chariot</h2>
+          <p class="section-lead">
+            Can you prevent a catastrophic group project fallout? Test your mediation instincts through a 3-stage interactive crisis simulation.
+          </p>
+        </div>
+
+        <div class="simulator-wrapper" id="simulator-wrapper">
+          <!-- Simulator Intro / Stages dynamically controlled by app.js -->
+          <div class="sim-card" id="sim-main-container">
+            <!-- Rendered in app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFLICT ARCHETYPE QUIZ -->
+    <section id="archetype" class="archetype-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">SELF-AWARENESS DIAGNOSTIC</span>
+          <h2 class="section-title">What Is Your Conflict Archetype?</h2>
+          <p class="section-lead">
+            When pressure mounts in your university group, which epic personality governs your instincts? Take this quick 4-question diagnostic to find out and refine your leadership.
+          </p>
+        </div>
+
+        <div class="archetype-quiz-box" id="quiz-container">
+          <!-- Rendered in app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- KNOWLEDGE VAULT: UDYOGA PARVA IN DEPTH -->
+    <section class="knowledge-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">HISTORICAL CONTEXT</span>
+          <h2 class="section-title">Why the Peace Mission Matters</h2>
+          <p class="section-lead">
+            Why did Krishna travel to the Kaurava court when everyone—including Draupadi and Sahadeva—knew Duryodhana was stubborn?
+          </p>
+        </div>
+
+        <div class="knowledge-cards-row">
+          <div class="knowledge-card">
+            <div class="k-icon">⚖️</div>
+            <h3>Moral Primacy (Dharma-Sthāpanā)</h3>
+            <p>
+              Krishna explained that even if peace seems impossible, one must make the highest effort so that history and conscience record that every doorway to harmony was tested before conflict was unleashed.
+            </p>
+          </div>
+          <div class="knowledge-card">
+            <div class="k-icon">🛡️</div>
+            <h3>Protecting the Vulnerable</h3>
+            <p>
+              In any campus project battle, anger hurts everyone—especially teammates caught in the crossfire who just want to pass the course. Krishna’s diplomacy protected millions of innocents.
+            </p>
+          </div>
+          <div class="knowledge-card">
+            <div class="k-icon">🧠</div>
+            <h3>Emotional Steadfastness (Sthitaprajña)</h3>
+            <p>
+              When Duryodhana tried to capture Krishna in the assembly hall, Krishna did not scream or panic. He smiled with divine composure. Never let another person's aggression hijack your poise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL: CONFLICT RESOLUTION DETAIL DRAWER -->
+  <div class="modal-backdrop" id="scenario-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header-area">
+        <div class="modal-category-badge" id="modal-cat-badge">👥 Team Conflict</div>
+        <h2 class="modal-problem-title" id="modal-problem-title">Conflict Title Goes Here</h2>
+        <div class="modal-epic-ref" id="modal-epic-ref">Mahabharata Anchor: Udyoga Parva, Krishna's Embassy</div>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="strategy">💡 Strategy & Epic Verse</button>
+        <button class="modal-tab" data-tab="action">✅ 5-Step Action Plan</button>
+        <button class="modal-tab" data-tab="script">💬 WhatsApp / Email Scripts</button>
+        <button class="modal-tab" data-tab="pitfall">⚠️ Kaurava Traps (Avoid)</button>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="modal-body-area">
+        <!-- TAB 1: STRATEGY & VERSE -->
+        <div class="tab-pane active" id="pane-strategy">
+          <div class="modal-shloka-box">
+            <div class="modal-shloka-sanskrit" id="modal-shloka-sanskrit">शमं रोचयसे कृष्ण...</div>
+            <div class="modal-shloka-translit" id="modal-shloka-translit">Śamaṁ rocayase kṛṣṇa...</div>
+            <div class="modal-shloka-meaning" id="modal-shloka-meaning">Translation of the verse...</div>
+          </div>
+
+          <div class="modal-insight-block">
+            <h4 class="insight-title">🏛️ The Mahabharata Context</h4>
+            <p id="modal-epic-story">Story context...</p>
+          </div>
+
+          <div class="modal-insight-block">
+            <h4 class="insight-title">⚡ The Core Strategic Lesson</h4>
+            <p id="modal-strategic-lesson">Strategic lesson...</p>
+          </div>
+
+          <div class="modal-insight-block">
+            <h4 class="insight-title">🎒 Modern Student Reality</h4>
+            <p id="modal-student-reality">What is actually happening under the hood...</p>
+          </div>
+        </div>
+
+        <!-- TAB 2: ACTION PLAN -->
+        <div class="tab-pane" id="pane-action">
+          <p class="tab-intro">Follow these five structured steps. Check them off as you execute them:</p>
+          <div class="interactive-checklist" id="modal-action-checklist">
+            <!-- Checklist items rendered dynamically -->
+          </div>
+          <div class="action-footer">
+            <div class="progress-bar-wrap">
+              <span class="progress-text" id="checklist-progress-text">0 of 5 steps completed</span>
+              <div class="progress-bar"><div class="progress-fill" id="checklist-progress-fill" style="width: 0%"></div></div>
+            </div>
+            <button class="btn btn-gold-sm" id="btn-print-plan">
+              <span>🖨️ Print / Save Plan</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB 3: SCRIPTS & TEMPLATES -->
+        <div class="tab-pane" id="pane-script">
+          <p class="tab-intro">Ready-to-use communication templates designed to de-escalate without losing your ground. Tap to copy:</p>
+          <div class="scripts-container" id="modal-scripts-container">
+            <!-- Script cards rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- TAB 4: PITFALLS & WHAT NOT TO DO -->
+        <div class="tab-pane" id="pane-pitfall">
+          <div class="pitfall-box">
+            <h4 class="pitfall-title">🚫 The "Duryodhana Pitfall" (What NOT to Do)</h4>
+            <ul class="pitfall-list" id="modal-pitfall-list">
+              <!-- Pitfalls rendered dynamically -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-area">
+        <button class="btn btn-glass modal-close-btn-bottom" id="modal-close-bottom">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: DEPLOYMENT GUIDE -->
+  <div class="modal-backdrop" id="deploy-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog deploy-dialog">
+      <button class="modal-close-btn" id="deploy-modal-close" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header-area">
+        <div class="modal-category-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: rgba(16, 185, 129, 0.4);">
+          ⚡ Instant Free Deployment
+        </div>
+        <h2 class="modal-problem-title">How to Deploy "Kurukshetra to Campus" Online</h2>
+        <p class="deploy-sub">This web app is pure HTML, CSS, and Vanilla JavaScript—ready for zero-setup 100% free hosting in under 60 seconds!</p>
+      </div>
+
+      <div class="deploy-methods-grid">
+        <!-- METHOD 1: NETLIFY DROP (EASIEST) -->
+        <div class="deploy-card highlight-deploy">
+          <div class="deploy-card-header">
+            <span class="deploy-badge">⭐ Recommended (No Git Required)</span>
+            <h3>Method 1: Netlify Drop</h3>
+            <span class="deploy-time">⏱️ 30 Seconds • Free Forever</span>
+          </div>
+          <ol class="deploy-steps">
+            <li>Open <a href="https://app.netlify.com/drop" target="_blank" rel="noopener">app.netlify.com/drop</a> in your browser.</li>
+            <li>Drag & drop the entire <code>kurukshetra-to-campus</code> folder right into the browser window.</li>
+            <li>Boom! Netlify gives you an instant live HTTPS link (e.g., <code>https://kurukshetra-to-campus.netlify.app</code>).</li>
+            <li>You can customize the domain name under Site Settings &gt; Change site name!</li>
+          </ol>
+        </div>
+
+        <!-- METHOD 2: VERCEL -->
+        <div class="deploy-card">
+          <div class="deploy-card-header">
+            <h3>Method 2: Vercel</h3>
+            <span class="deploy-time">⏱️ 1 Minute • Blazing Fast</span>
+          </div>
+          <ol class="deploy-steps">
+            <li>Go to <a href="https://vercel.com/new" target="_blank" rel="noopener">vercel.com/new</a>.</li>
+            <li>Connect your GitHub account or upload your project folder.</li>
+            <li>Set Framework Preset to <strong>"Other"</strong> and click <strong>Deploy</strong>.</li>
+            <li>Your site goes live with automated global CDN and HTTPS!</li>
+          </ol>
+        </div>
+
+        <!-- METHOD 3: GITHUB PAGES -->
+        <div class="deploy-card">
+          <div class="deploy-card-header">
+            <h3>Method 3: GitHub Pages</h3>
+            <span class="deploy-time">⏱️ 2 Minutes • Great for Portfolios</span>
+          </div>
+          <ol class="deploy-steps">
+            <li>Create a new public repository on GitHub (e.g. <code>kurukshetra-to-campus</code>).</li>
+            <li>Upload <code>index.html</code>, <code>style.css</code>, <code>app.js</code>, <code>hero-banner.jpg</code>, and <code>logo.jpg</code>.</li>
+            <li>Go to <strong>Settings</strong> &gt; <strong>Pages</strong>.</li>
+            <li>Under Branch, select <strong>main</strong> and folder <strong>/ (root)</strong>, then click <strong>Save</strong>.</li>
+            <li>Live at <code>https://your-username.github.io/kurukshetra-to-campus</code>!</li>
+          </ol>
+        </div>
+
+        <!-- METHOD 4: LOCAL PREVIEW -->
+        <div class="deploy-card">
+          <div class="deploy-card-header">
+            <h3>Method 4: Run Locally (Test Right Now)</h3>
+            <span class="deploy-time">⏱️ Instant</span>
+          </div>
+          <p class="deploy-code-desc">Run this one-liner in your terminal / PowerShell:</p>
+          <div class="code-snippet-box">
+            <code>python -m http.server 8000</code>
+            <button class="btn-copy-code" onclick="copyText('python -m http.server 8000')">Copy</button>
+          </div>
+          <p class="deploy-code-desc">Then open <code>http://localhost:8000</code> in your browser!</p>
+        </div>
+      </div>
+
+      <div class="modal-footer-area">
+        <button class="btn btn-gold modal-close-btn-bottom" id="deploy-close-bottom">Got it, Let's Deploy!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notification" role="status" aria-live="polite">
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="Logo" class="footer-logo">
+          <span>Kurukshetra to Campus</span>
+        </div>
+        <p class="footer-desc">
+          An educational initiative transforming ancient strategic principles into modern campus leadership, communication harmony, and constructive team building.
+        </p>
+      </div>
+      <div class="footer-center">
+        <h4>Core Sections</h4>
+        <ul class="footer-links">
+          <li><a href="#about">The Udyoga Parva Story</a></li>
+          <li><a href="#framework">The 4 Upāyas (साम, दान, भेद, दण्ड)</a></li>
+          <li><a href="#scenarios">12 Student Scenarios</a></li>
+          <li><a href="#simulator">Krishna Doota Simulator</a></li>
+          <li><a href="#archetype">Conflict Archetype Quiz</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h4>Ethical Note</h4>
+        <p class="footer-disclaimer">
+          This platform is an educational thinking tool designed for team collaboration and academic disputes. It does not replace professional counseling or university institutional grievances.
+        </p>
+        <div class="footer-copyright">
+          © 2026 Kurukshetra to Campus. Built with HTML, CSS & JavaScript. No algorithms. Just timeless wisdom.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
